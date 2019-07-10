@@ -1,10 +1,8 @@
-# ProgressBar
-ProgressBar in cmd or powershell
+/**
+ * test
+ */
+const ProgressBar = require('./index');
 
-## Usage  
-
-``` js  
-const ProgressBar = require('./ProgressBar');
 const title = '下载进度';
 const length = 50;
 const total = 200;
@@ -28,8 +26,3 @@ function downloading() {
 }
 
 downloading();
-```  
-
-## test
-
-> node test
