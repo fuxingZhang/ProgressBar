@@ -89,7 +89,7 @@ More examples in the `examples` folder.
  */
 
 /**
- * progressBar.end: interrupt the progress bar and write a message above it
+ * progressBar.console: interrupt the progress bar and write a message above it
  * 
  * @param {string | number} message The message to write
  */
