@@ -1,14 +1,26 @@
 {
-  "name": "progress",
+  "name": "@zhangfuxing/progress",
   "version": "1.0.0",
-  "description": "",
+  "description": "ProgressBar in cmd or powershell",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "zfx",
-  "license": "ISC",
   "dependencies": {
-    "single-line-log": "^1.1.2"
-  }
+    "@zhangfuxing/colors": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuxingZhang/ProgressBar.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "progress"
+  ],
+  "author": "Zhang Fu Xing <502545703@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuxingZhang/ProgressBar/issues"
+  },
+  "homepage": "https://github.com/fuxingZhang/ProgressBar#readme"
 }
