@@ -49,7 +49,7 @@ More examples in the `examples` folder.
   - default: colors.bgGreen(' '), can use any string
 * `incomplete` optional, incomplete character 
   - default: colors.bgWhite(' '), can use any string
-* `interval` optional, minimum time between updates in milliseconds, default: 16
+* `interval` optional, minimum time between updates in milliseconds, default: 0
 * `display` optional, What is displayed and display order
   - default: ':title :percent :bar :time :completed/:total'
 * `clear` optional, clear the bar on completion
@@ -77,7 +77,7 @@ More examples in the `examples` folder.
  * @param {String} [complete] completion character, default: colors.bgGreen(' '), can use any string
  * @param {String} [incomplete] incomplete character, default: colors.bgWhite(' '), can use any string
  * @param {Boolean} [clear]  clear the bar on completion, default: false
- * @param {Number} [interval]  minimum time between updates in milliseconds, default: 16
+ * @param {Number} [interval]  minimum time between updates in milliseconds, default: 0
  * @param {String} [display]  What is displayed and display order, default: ':title :percent :bar :time :completed/:total'
  */
 

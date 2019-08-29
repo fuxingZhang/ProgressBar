@@ -13,7 +13,7 @@ class ProgressBar {
    * @param {String} [complete] completion character, default: colors.bgGreen(' '), can use any string
    * @param {String} [incomplete] incomplete character, default: colors.bgWhite(' '), can use any string
    * @param {Boolean} [clear]  clear the bar on completion, default: false
-   * @param {Number} [interval]  minimum time between updates in milliseconds, default: 16
+   * @param {Number} [interval]  minimum time between updates in milliseconds, default: 0
    * @param {String} [display]  What is displayed and display order, default: ':title :percent :bar :time :completed/:total'
    */
   constructor({ title, total, width, complete, incomplete, clear, interval, display }) {
@@ -23,7 +23,7 @@ class ProgressBar {
     this.complete = complete || colors.bgGreen(' ');
     this.incomplete = incomplete || colors.bgWhite(' ');
     this.clear = clear || false;
-    this.interval = interval || 16;
+    this.interval = interval || 0;
     this.display = display || ':title :percent :bar :time :completed/:total';
     this.stream = process.stdout;
     this.isCompleted = false;
