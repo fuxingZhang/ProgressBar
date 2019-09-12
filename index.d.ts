@@ -42,7 +42,7 @@ interface ProgressBarOptions {
   clear?: boolean;
 }
 
-export declare class ProgressBar {
+declare class ProgressBar {
   /**
    * Options:
    *   - `title` optional, Progress bar title, default: ''
@@ -74,3 +74,5 @@ export declare class ProgressBar {
    */
   end(): void;
 }
+
+export = ProgressBar
