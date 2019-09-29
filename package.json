@@ -1,6 +1,6 @@
 {
   "name": "@zhangfuxing/progress",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ProgressBar in cmd or powershell",
   "main": "index.js",
   "dependencies": {
