@@ -60,7 +60,7 @@ More examples in the `examples` folder.
 * `total` optional, total number of ticks to complete, Can also be set in the constructor
 
 ### console  
-* `message` The message to write  
+* `message` interrupt the progress bar and write a message above it  
 
 ### end
 * end a progress bar  
@@ -82,20 +82,20 @@ More examples in the `examples` folder.
  */
 
 /**
- * progressBar.render: render the progress bar
+ * render: render the progress bar
  * 
  * @param {Number} completed Completed value
  * @param {Number} [total] total number of ticks to complete, Can also be set in the constructor
  */
 
 /**
- * progressBar.console: interrupt the progress bar and write a message above it
+ * console: interrupt the progress bar and write a message above it
  * 
  * @param {string | number} message The message to write
  */
 
 /**
- * progressBar.end: end a progress bar.
+ * end: end a progress bar.
  * 
  * @api public
  */
