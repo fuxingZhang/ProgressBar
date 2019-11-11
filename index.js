@@ -64,7 +64,7 @@ class ProgressBar {
 
     const now = Date.now();
     const ms = now - this.lastRender;
-    if (completed >= total && ms < this.interval) return;
+    if (ms < this.interval && completed < total) return;
 
     this.lastRender = now;
     this.time = ((now - this.start) / 1000).toFixed(1) + 's';
