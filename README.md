@@ -65,7 +65,6 @@ More examples in the `examples` folder.
 ### end
 * end a progress bar  
 
-
 ## types
 ```js
 /**
@@ -77,7 +76,7 @@ More examples in the `examples` folder.
  * @param {String} [complete] completion character, default: colors.bgGreen(' '), can use any string
  * @param {String} [incomplete] incomplete character, default: colors.bgWhite(' '), can use any string
  * @param {Boolean} [clear]  clear the bar on completion, default: false
- * @param {Number} [interval]  minimum time between updates in milliseconds, default: 0
+ * @param {Number} [interval]  minimum time between updates in milliseconds, default: 16
  * @param {String} [display]  What is displayed and display order, default: ':title :percent :bar :time :completed/:total'
  */
 

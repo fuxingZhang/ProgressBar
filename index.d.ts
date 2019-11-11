@@ -27,7 +27,7 @@ interface ProgressBarOptions {
   incomplete?: string;
 
   /**
-   * minimum time between updates in milliseconds, default: 0
+   * minimum time between updates in milliseconds, default: 16
    */
   interval?: number;
 
