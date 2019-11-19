@@ -50,7 +50,7 @@ declare class ProgressBar {
    *   - `width` optional, the displayed width of the progress, default: 50
    *   - `complete` optional, completion character, default: colors.bgGreen(' '), can use any string
    *   - `incomplete` optional, incomplete character, default: colors.bgWhite(' '), can use any string
-   *   - `interval` optional, minimum time between updates in milliseconds, default: 0
+   *   - `interval` optional, minimum time between updates in milliseconds, default: 16
    *   - `display` optional, What is displayed and display order, default: ':title :percent :bar :time :completed/:total'
    *   - `clear` optional, clear the bar on completion, default: false
    */
