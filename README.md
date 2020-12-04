@@ -1,5 +1,8 @@
 # ProgressBar
-ProgressBar in cmd or powershell
+ProgressBar output in terminal written in nodejs
+
+Multi-line progress bar output in terminal written in nodejs
+> https://github.com/fuxingZhang/multiProgressBar
 
 ## Install
 
