@@ -51,7 +51,7 @@ class ProgressBar {
    * @api public
    */
   render(completed, total = this.total) {
-    if (!this.stream.isTTY) return;
+    if (!this.stream.isTTY || this.isCompleted) return;
 
     completed = +completed;
     if (!Number.isInteger(completed)) throw new Error(`completed must be 'number'`);
@@ -59,8 +59,6 @@ class ProgressBar {
 
     if (total === undefined) throw new Error(`total required`);
     if (!Number.isInteger(total)) throw new Error(`total must be 'number'`);
-
-    if (this.isCompleted) console.warn('Called after the end');
 
     const now = Date.now();
     const ms = now - this.lastRender;
@@ -96,13 +94,11 @@ class ProgressBar {
       this.stream.cursorTo(0);
       this.stream.write(str);
       this.stream.clearLine(1);
+      this.stream.cursorTo(0);
       this.lastStr = str;
     }
 
-    if (completed >= total) {
-      this.end()
-      return;
-    }
+    if (completed >= total) this.end();
   }
 
   /**

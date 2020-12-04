@@ -1,6 +1,6 @@
 const ProgressBar = require('..');
 
-const title = '下载进度:';
+const title = 'download:';
 const total = 100;
 
 const progress = new ProgressBar({
