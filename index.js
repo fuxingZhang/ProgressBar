@@ -16,7 +16,7 @@ class ProgressBar {
    * @param {Number} [interval]  minimum time between updates in milliseconds, default: 16
    * @param {String} [display]  What is displayed and display order, default: ':title :percent :bar :time :completed/:total'
    */
-  constructor({ title, total, width, complete, incomplete, clear, interval, display }) {
+  constructor({ title, total, width, complete, incomplete, clear, interval, display } = {}) {
     this.title = title || '';
     this.total = total;
     this.width = width || 50;
@@ -55,7 +55,7 @@ class ProgressBar {
 
     completed = +completed;
     if (!Number.isInteger(completed)) throw new Error(`completed must be 'number'`);
-    if(completed < 0) throw new Error(`completed must greater than or equal to 0`);
+    if (completed < 0) throw new Error(`completed must greater than or equal to 0`);
 
     if (total === undefined) throw new Error(`total required`);
     if (!Number.isInteger(total)) throw new Error(`total must be 'number'`);
